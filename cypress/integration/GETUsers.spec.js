@@ -8,6 +8,8 @@ describe('Given the Users api', () => {
                 url: 'https://serverest.dev/usuarios'
             })
                 .should((response) => {
+                    cy.log(JSON.stringify(response.headers))
+
                     cy.log(JSON.stringify(response.body))
                     expect(response.status).to.eq(200)
                     expect(response.body.quantidade).to.eq(response.body.usuarios.length)

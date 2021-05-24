@@ -8,7 +8,7 @@ describe('Given the Users api', () => {
                 url: 'https://serverest.dev/usuarios',
                 body: {
                     nome: "Dumb Joe",
-                    email: "aadumb.joe@qa.com.br",
+                    email: "pkdumb.joe@qa.com.br",
                     password: "test",
                     administrador: "true"
                 }
@@ -19,4 +19,6 @@ describe('Given the Users api', () => {
                 });
         });
     });
+
+
 });
