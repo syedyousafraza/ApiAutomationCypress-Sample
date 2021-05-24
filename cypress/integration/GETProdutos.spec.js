@@ -12,9 +12,9 @@ describe('Products api', () => {
                     expect(response.body.quantidade).to.eq(5)
                     expect(response.body.produtos.length).to.be.eq(5);
                     expect(response.body.produtos[0]).to.have.all.keys(
-                      'nome', 'preco', 'descricao', 'quantidade', '_id'
-                      )
-                      cy.log(JSON.stringify(response.body))
+                        'nome', 'preco', 'descricao', 'quantidade', '_id'
+                    )
+                    cy.log(JSON.stringify(response.body))
 
                 });
         });
